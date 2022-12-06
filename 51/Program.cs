@@ -67,15 +67,16 @@ class Program
   static void Main()
   {
 
-  int k=10;
+  int k=2;
   double[,] scaleMatrix=new double[2,2];
   scaleMatrix[0,0]=k;
   scaleMatrix[1,1]=k;
   //точки фигуры
-  HomePoint[] points=new HomePoint[3];
-  points[0]=new HomePoint(1,1,1);
-  points[1]=new HomePoint(3,1,1);
-  points[2]=new HomePoint(2,2,1);
+  HomePoint[] points=new HomePoint[4];
+  points[0]=new HomePoint(-1,-1,1);
+  points[1]=new HomePoint(-1,3,1);
+  points[2]=new HomePoint(3,3,1);
+  points[3]=new HomePoint(3,-1,1);
   System.Console.WriteLine("Points before scale");
   foreach(HomePoint point in points)
     System.Console.WriteLine(point);
