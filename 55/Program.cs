@@ -13,6 +13,12 @@ class Program
     struct Point
     {
         public double x,y;
+
+        public Point(double x,double y)
+        {
+            this.x=x;
+            this.y=y;
+        }
     }
 
     static double Distance(double x1,double y1, double x2,double y2)
@@ -35,16 +41,19 @@ class Program
         System.Console.WriteLine(Distance(a,b));
 
         Point[] figure=new Point[3];
+        figure[0]=new Point(0,0);
+        figure[1]=new Point(1,1);
+        figure[2]=new Point(0,1);
+
         double k=2;
         for(int i=0;i<figure.Length;i++)
         {
-         figure[i].x*=k;
-         figure[i].y=figure[i].y*k;
+          figure[i].x*=k;
+          figure[i].y=figure[i].y*k;
         }
 
     }
 
-    
 
 }
 
